@@ -1,0 +1,121 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box!important;
+    font-family: 'Poppins', sans-serif!important;
+    border: 1px solid red;
+}
+
+
+
+/* =====common styles========= */
+.flex-center{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.heading-colors{
+    color: #fff;
+}
+
+/* ============navbar=========== */
+.nav-container{
+    position: absolute;
+    width: 100%;
+    margin-top: 20px !important;
+    z-index: 99999;
+    
+}
+.nav-container .navbar {
+    background: #005555 !important;
+    color: #fff !important; 
+}
+.nav-container .navbar .logo{
+    font-size: 30px !important;
+}
+.nav-container .navbar ul a{
+    color: rgb(183, 186, 189) !important;
+}
+.nav-container .navbar ul a.active{
+    color: white !important;
+}
+
+/* ============Home=========== */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.hero .home-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute !important;
+    z-index: 999999;
+    height: 500px;
+    width: 500px;
+}
+#home-input{
+    width: 60%;
+    height: 45px;
+    border-radius:20px;
+}
+.hero .home-info .main-btn{
+    color: #fff;
+    background: #005555;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px !important;
+}
+
+.carousel{
+   
+    position: relative !important;
+  
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center;
+   }
+   .carousel::before{
+       content: '';
+       position: absolute;
+       top: 0 !important;
+       left: 0 !important;
+       width: 100% !important;
+       height: 100% !important;
+       background: rgba(0, 0, 0, 0.5) !important;
+       opacity: 0.5 !important;
+   }
+   .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100% !important;
+    height: 100vh !important;
+    
+}
+.carousel::before{
+    
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000 !important;
+    opacity: 0.5;
+}
+/* ============popular properties=========== */
+/* ============cards section=========== */
+/* ============Customer section=========== */
+/* ============find home section=========== */
+/* ============Our agents=========== */
+/* ============Footers=========== */

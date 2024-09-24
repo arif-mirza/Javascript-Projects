@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light-Bulb</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="./images/menu.png" class="menu-img">
+        <img src="./images/logo.png" class="logo">
+        <ul>
+            <li><a href="#">Lastest</a></li>
+            <li><a href="#">Modren</a></li>
+            <li><a href="#">Contemporay</a></li>
+            <li><a href="#">Afforable</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+    <div class="lamp-container" id="lampAni">
+        <img src="./images/lamp.png" class="lamp">
+        <img src="./images/light.png" class="light" id="light">
+    </div>
+
+    <div class="text-container">
+        <h1>Latest<br> in Lighting</h1>
+        <p>This is the first lamp from our company. we're making a huge
+            collection of mordern Lamps in all categories from home use to office use.
+        </p>
+        <a href="">Check All the Links</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+</div>
+
+    <!-- js -->
+
+    <script>
+
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        var lampAni = document.getElementById("lampAni");
+
+        
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+            lampAni.classList.toggle("lampAni");
+            
+        };
+
+
+       
+    </script>
+</body>
+</html>

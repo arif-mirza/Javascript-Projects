@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family : 'poppins' sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: 100%; */
+}
+
+
+.hero{
+    background: #1d2026;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    margin:0;
+    padding: 0;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%; 
+
+}
+nav .menu-img{
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+nav .logo{
+    width: 140px;
+    cursor: pointer;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+button{
+    background: #efefef;
+    /* width: 20px; */
+    /* flex-basis: 70px; */
+    height: 30px;
+    width: 60px;
+    font-size: 300px;
+    border-radius: 30px;
+    bottom: 0;outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s,
+    margin-left  0.5s;
+}
+.lamp-container{
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 100px;
+    box-sizing: border-box;
+    
+}
+.lamp{
+    width: 130%;
+    margin-right: 30px;
+   
+}
+
+.light{
+    position: absolute;
+    top: 96%;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 430%;
+    height: 150%;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.text-container{
+    max-width: 1000px;
+    margin-top: 4%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-container a{
+    background: #00986f;
+    padding: 14px 40px ;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-right: 30px;
+
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+
+}
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
+.lampAni{
+    animation: lamp 0.9s ease-in-out 0.1ms 4 alternate ;
+    transition: 0.5s ease;
+}
+@keyframes lamp {
+    0%{
+     transform: rotate(-50deg);
+     transition: 20s ease;
+ 
+    }
+    
+    100%{
+     transform: rotate(50deg);
+     transition: 20s ease;
+ 
+    }
+    
+    
+ }
